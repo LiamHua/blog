@@ -1,0 +1,20 @@
+server:
+  port: 8083
+logging:
+    file:
+      name: blog.log
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: liam
+    password: 321098
+    url: jdbc:mysql://47.98.245.249:3306/blog?useUnicode=true&characterEncoding=utf-8
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      max-wait: 1000
+      time-between-eviction-runs-millis: 60000
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: mysql
+    show-sql: true
